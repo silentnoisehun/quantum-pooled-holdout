@@ -1,0 +1,53 @@
+{
+  "protocol": "quantum-pooled-holdout",
+  "generated_utc": "2026-11-07T08:50:00Z",
+  "split_seed": 20261115,
+  "sources": {
+    "qhf-bell-spectator": {
+      "commit": "6403006e8e8156637841c2a135128038b556b620",
+      "date": "2026-11-07T05:27:29Z",
+      "hardware": "ibm_marrakesh"
+    },
+    "qhf-core": {
+      "commit": "b6dac0ed6a7e0fef39ff9179612c96c4667a421d",
+      "date": "2026-11-07T05:27:31Z",
+      "hardware": "ibm_marrakesh"
+    },
+    "qhf-topological-vortex": {
+      "commit": "a66b1bce219808d98dcf62eb688e146eb137be59",
+      "date": "2026-11-07T04:32:01Z",
+      "hardware": "ibm_marrakesh"
+    },
+    "quantum-anchor": {
+      "commit": "33342cdc11df3c15509930f7e4e130283c4856b3",
+      "date": "2026-11-02T21:00:51Z",
+      "hardware": "ibm_marrakesh / iqm_garnet"
+    },
+    "quantum-delayed-sync": {
+      "commit": "e742a56fdff9c4b7b254c728ffba1fe0d885a069",
+      "date": "2026-11-02T21:01:08Z",
+      "hardware": "ibm_kingston"
+    },
+    "quantum-hydrodynamic-feedback": {
+      "commit": "0dd7901bc09355f653153ea2b1fc8976f0c78a05",
+      "date": "2026-11-02T21:02:00Z",
+      "hardware": "ibm_marrakesh"
+    },
+    "quantum-space-memory": {
+      "commit": "7bdc94e5a95eb99f6606f7ba6520b220d5757134",
+      "date": "2026-11-07T08:10:36Z",
+      "hardware": "ibm_kingston"
+    },
+    "scs-quantum": {
+      "commit": "1308c663a8a389658dbbcba32e3612871f302a5c",
+      "date": "2026-11-02T21:00:38Z",
+      "hardware": "ibm_marrakesh"
+    },
+    "wave-quantum": {
+      "commit": "6409f3d99435b88ec7b9c9f22591871221f7d23a",
+      "date": "2026-11-02T21:01:39Z",
+      "hardware": "ibm_fez / ibm_marrakesh / ibm_kingston"
+    }
+  },
+  "confirm_holdout_hash": "023f870beeb9608ef62914e064b1f59b6d15bc00029f903ccd23b0fac6bc746f"
+}
