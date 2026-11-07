@@ -1,0 +1,73 @@
+{
+  "perspective_1_higher_moments": {
+    "var": {
+      "diff": 1.2964010238647461e-05,
+      "p": 0.9911165833473206,
+      "s0_mean": 0.01679198071360588,
+      "s1_mean": 0.016804944723844528
+    },
+    "skew": {
+      "diff": 0.04439897296512135,
+      "p": 0.5666299134773836,
+      "s0_mean": 0.31723414932524685,
+      "s1_mean": 0.3616331222903682
+    },
+    "kurt": {
+      "diff": 0.3900936854513066,
+      "p": 0.5384447510104187,
+      "s0_mean": 2.197113170958402,
+      "s1_mean": 2.5872068564097086
+    },
+    "tail_3sigma": {
+      "diff": 9.251644736842134e-05,
+      "p": 0.7257238789483339,
+      "s0_mean": 0.002055921052631579,
+      "s1_mean": 0.0021484375
+    }
+  },
+  "perspective_2_cal_separation": {
+    "diff": 209504.0,
+    "p": 0.9891853928565979
+  },
+  "perspective_3_reset_residual": {
+    "diff": -464408.0,
+    "p": 0.949225902557373
+  },
+  "perspective_4_geometric_crosstalk": {
+    "diff": -0.0011229593073949218,
+    "p": 0.7000020742416382,
+    "n_active": 12,
+    "n_passive": 11
+  },
+  "perspective_5_hamming_weights": {
+    "c_live|F": 1.2831858407079646,
+    "c_live|N": 1.2789317507418398,
+    "c_live_simultaneous|F": 2.197101449275362,
+    "c_live_simultaneous|N": 2.121580547112462,
+    "space_memory|A": 1.3448275862068966,
+    "space_memory|counts_c1": 1.5354330708661417,
+    "space_memory|counts_c2": 0.8498168498168498,
+    "space_memory|counts_main": 0.7457627118644068
+  },
+  "perspective_6_shot_memory": {
+    "mean_lag1_corr": -0.026775977150755033,
+    "fraction_sig_runs": 0.125,
+    "n_jobs": 8
+  },
+  "perspective_7_temporal_drift": {
+    "pearson_r": -0.22125803322260607,
+    "p": 0.2578435795074925
+  },
+  "perspective_8_entropy": {
+    "arm_C": -1.4428232973175175e-12,
+    "arm_Q": 1.7298747225948565
+  },
+  "perspective_9_spectroscopy": {
+    "n_rows": 485,
+    "n_jobs": 1
+  },
+  "perspective_10_satellite_fraction": {
+    "diff": 0.00025185032894736855,
+    "p": 0.604531737401657
+  }
+}
