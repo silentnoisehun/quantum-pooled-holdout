@@ -1,0 +1,16 @@
+# Virtual environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Cloned source repositories for hashing
+repos/
+
+# Materialized split views (can be regenerated with split.py materialize)
+split/explore/
+split/confirm/
+
+# Temporary / OS
+.DS_Store
+Thumbs.db

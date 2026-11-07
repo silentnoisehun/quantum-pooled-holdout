@@ -1,0 +1,153 @@
+{
+  "included_tests": 9,
+  "fisher": {
+    "chi2": 24.63407758855331,
+    "df": 18,
+    "p": 0.13533197402098526
+  },
+  "stouffer_A_preregistered_direction": {
+    "tests": [
+      "c_live",
+      "c_live_simultaneous"
+    ],
+    "Z": 0.9776645708710765,
+    "p_one_sided": 0.164120124996108
+  },
+  "stouffer_B_memory_direction": {
+    "tests": [
+      "c_live",
+      "c_live_simultaneous",
+      "space_memory",
+      "zero_iq",
+      "zero_iq_energy_matched"
+    ],
+    "Z": 0.28597411413670204,
+    "p_one_sided": 0.3874489739470559,
+    "p_two_sided": 0.7748979478941118
+  },
+  "stouffer_C_unsigned_halfnormal": {
+    "Z": 0.876607755483673,
+    "p_one_sided": 0.19034986264366616,
+    "note": "sum of |z| standardised against the half-normal null"
+  },
+  "signs": {
+    "positive": 7,
+    "of": 9,
+    "binomial_p_two_sided": 0.1796875
+  },
+  "smallest_p": {
+    "test": "spatial_bath_spectroscopy",
+    "p": 0.024102641185189257,
+    "bonferroni_over_all": 0.21692377066670332
+  },
+  "spectroscopy_per_tau": [
+    {
+      "tau_us": 0.0,
+      "dphi_deg": 0.8014377366037743,
+      "se_deg": 0.9049525965806028,
+      "z": 0.8856129477190703
+    },
+    {
+      "tau_us": 10.0,
+      "dphi_deg": 1.9451525225194293,
+      "se_deg": 0.9735995772523668,
+      "z": 1.997897870918268
+    },
+    {
+      "tau_us": 25.0,
+      "dphi_deg": 2.2121408013700994,
+      "se_deg": 1.003188415300784,
+      "z": 2.205109994922377
+    },
+    {
+      "tau_us": 50.0,
+      "dphi_deg": 4.072655846802179,
+      "se_deg": 1.4448249560173665,
+      "z": 2.8187884143615434
+    },
+    {
+      "tau_us": 100.0,
+      "dphi_deg": 1.3109882888946245,
+      "se_deg": 2.2883235598637155,
+      "z": 0.5729033742818704
+    }
+  ],
+  "bounds_99pct": [
+    {
+      "test": "c_live",
+      "effect": 0.0025390625,
+      "se_from_p": 0.0026072661149378613,
+      "ci99": [
+        -0.00417725501207993,
+        0.009255380012079931
+      ]
+    },
+    {
+      "test": "c_live_simultaneous",
+      "effect": 0.00021158854166666667,
+      "se_from_p": 0.0005176027917721978,
+      "ci99": [
+        -0.001121756249938515,
+        0.0015449333332718481
+      ]
+    },
+    {
+      "test": "space_memory",
+      "effect": 0.00022956665305010898,
+      "se_from_p": 0.0002510971330074867,
+      "ci99": [
+        -0.0004172595615771768,
+        0.0008763928676773947
+      ]
+    },
+    {
+      "test": "zero_iq",
+      "effect": -0.000686126889295054,
+      "se_from_p": 0.0011613017387322754,
+      "ci99": [
+        -0.0036776401682693956,
+        0.002305386389679288
+      ]
+    },
+    {
+      "test": "zero_iq_energy_matched",
+      "effect": -0.0013455897358820319,
+      "se_from_p": 0.001261572023615719,
+      "ci99": [
+        -0.004595399268716124,
+        0.0019042197969520607
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "exp": "qoi-core GPE-QPU closed loop (2026-11-02)",
+      "reason": "preregistered rule is a mode count (M1 >= 4 modes), no p-value"
+    },
+    {
+      "exp": "angle_calibration Marrakesh + Kingston (045219Z, 045336Z)",
+      "reason": "rule is R^2 > 0.85 of a sine model, no p-value; power about 5% (earlier audit)"
+    },
+    {
+      "exp": "memory_decay_sweep (060046Z)",
+      "reason": "classification rule on T_mem (232 us, T1 class), no p-value; it is a characterisation, not a test of H1"
+    },
+    {
+      "exp": "c_live_simultaneous 015449Z (9 blocks) and 020117Z (5 blocks)",
+      "reason": "stopped runs, below the preregistered block count, never analysed in the repo"
+    },
+    {
+      "exp": "quantum-anchor, quantum-anchored-memory, quantum-delayed-sync, wave-quantum, scs-quantum, quantum-hydrodynamic-feedback (Oct 2026)",
+      "reason": "no preregistration file; several outcomes were defined or rewritten after the data"
+    },
+    {
+      "exp": "p = 0.03 entropy metric (Marrakesh 80 runs, 2026-11-02)",
+      "reason": "chosen after looking at the data"
+    },
+    {
+      "exp": "all dry runs and simulations",
+      "reason": "not hardware"
+    }
+  ],
+  "independence": "Not fully independent: zero_iq, zero_iq_energy_matched, space_memory, spatial_ramsey and spatial_bath_spectroscopy all ran on ibm_kingston qubits 48-50 within three hours; c_live and c_live_simultaneous both on ibm_marrakesh; the two qpu_vs_rng runs share code. Positive correlation makes Fisher and Stouffer anti-conservative (combined p too small), so it cannot hide a signal; it can only exaggerate one. The Bonferroni bound on the smallest p is valid under any dependence."
+}
