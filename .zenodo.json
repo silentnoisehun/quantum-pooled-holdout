@@ -1,0 +1,11 @@
+{
+  "title": "Pooled exploration/confirmation split of 1,016 superconducting hardware jobs",
+  "description": "Dataset and split protocol for all hardware measurements in the public repositories of silentnoisehun (IBM Marrakesh, Kingston, Fez; IQM Garnet; 2026-10-07 to 2026-11-07). 1,016 jobs with job ids (856 counts histograms, 160 raw IQ shots), re-arranged without analysis into data/counts.parquet (68,650 rows), data/iq_shots.parquet (3,932,160 rows) and data/shot_memory.parquet (13,322 rows). Deterministic split (seed 'pooled-holdout|silentnoisehun|2026-11-07|seed=20261107', SHA-256 ordering within strata): 204 exploration units / 511 jobs and 201 confirmation units / 505 jobs, with SHA-256 digests per half in split_manifest.json. Combined test of nine preregistered primary results: Fisher chi2 = 24.63, df = 18, p = 0.135; Stouffer Z (memory direction) = +0.29, p = 0.387; signs 7 of 9, p = 0.180; smallest p = 0.0241 (Bonferroni over all: 0.217). Ten exploratory perspectives were tested on the exploration half; all ten returned p > 0.27 and no candidate was nominated, so under the protocol's Section 52 the protocol ends with no result. NOTE: a null result bounds the effect, it does not confirm the null hypothesis. The hypothesis of passive, persistent thermal/quantum remnants in transmon spectator chips across independent batch jobs is not supported; the bound that this design excludes is the appropriate statement, and it is set by the smallest effect the individual campaigns could have seen (roughly one percentage point in arm probability at 1,000 shots per arm).",
+  "creators": [{ "name": "Máté, Róbert", "orcid": "0009-0003-3986-6039", "affiliation": "Independent researcher" }],
+  "access_right": "open",
+  "license": "MIT",
+  "upload_type": "dataset",
+  "version": "1.1.0",
+  "publication_date": "2026-11-09",
+  "keywords": ["Quantum Computing", "IBM Quantum", "Meta-analysis", "Preregistration", "Holdout", "Superconducting Transmon", "Null Result", "Effect Bounds"]
+}

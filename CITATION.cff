@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset or the split protocol, cite it as below."
+title: "Pooled exploration/confirmation split of 1,016 superconducting hardware jobs"
+abstract: >-
+  All quantum hardware measurements from the public repositories of silentnoisehun
+  (2026-10-07 to 2026-11-07), re-arranged into one table, split deterministically into
+  an exploration half (204 units, 511 jobs) and a sealed confirmation half
+  (201 units, 505 jobs), plus a combined test of nine preregistered primary results
+  (Fisher chi2 = 24.63, df = 18, p = 0.135; Stouffer Z = +0.29, p = 0.387). No candidate
+  was nominated; the protocol ends with no result per its own Section 52.
+authors:
+  - family-names: "Máté"
+    given-names: "Róbert"
+    orcid: "https://orcid.org/0009-0003-3986-6039"
+    affiliation: "Independent researcher"
+license: MIT
+version: 1.1.0
+date-released: 2026-11-09
+url: "https://github.com/silentnoisehun/quantum-pooled-holdout"

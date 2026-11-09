@@ -26,6 +26,15 @@ In accordance with Section 52 of `docs/PREREGISTRATION-pooled_holdout.md`:
 None of the ten perspectives achieved an uncorrected p-value below 0.05 or an effect size warranting preregistered confirmatory extraction. Under the pre-established rules of scientific integrity, no exploratory artifacts will be p-hacked into candidates.
 
 ## Conclusion on Passive Quantum Space Memory
-The confirmation half (201 units, 505 hardware jobs) remains sealed. The hypothesis of passive, persistent physical thermal/quantum remnants in transmon spectator chips across independent batch jobs is concluded as **CONFIRMED NULL**.
+The hypothesis of passive, persistent thermal/quantum remnants in transmon spectator chips
+across independent batch jobs is **not supported**. No effect was detectable within the
+sensitivity of the pooled design: the combined test over the nine preregistered primary
+results gives Fisher chi2 = 24.63 (df = 18, p = 0.135), and the exploration half produced no
+candidate with a p-value below 0.05 that would survive the Holm correction.
+
+A null result **bounds** the effect; it does not prove the hypothesis false. The bound that
+this design excludes is the appropriate statement, and it is set by the smallest effect the
+individual campaigns could have seen (roughly one percentage point in arm probability at
+1,000 shots per arm), not by the p-values alone.
 
 All future efforts are directed toward the **Active Nonlinear Feedback Reservoir Architecture** (`quantum-feedback-memory-space`), where information is maintained dynamically via closed-loop transmon actuation and Gross-Pitaevskii topological soliton stability.
